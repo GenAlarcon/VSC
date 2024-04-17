@@ -1,19 +1,28 @@
-sueldoempleado = float(input("Ingrese el sueldo del empleado: "))
-
-if sueldoempleado > 1000000:
-    print("Se hará un aumento de sueldo del 7%")
-    aumentosueldo = sueldoempleado * 0.07
-elif sueldoempleado > 500000:
-    print("Se hará un aumento de sueldo del 9%")
-    aumentosueldo = sueldoempleado * 0.09
-elif sueldoempleado > 300000:
-    print("Se hará un aumento de sueldo del 12%")
-    aumentosueldo = sueldoempleado * 0.12
+print("Ingrese un numero")
+num =int(input())
+if num >0:
+    print("Es un numero positivo, como los sueños")
 else:
-    print("Su sueldo será aumentado un 15%")
-    aumentosueldo = sueldoempleado * 0.15
+    print("Es un numero negativo, como la vida o no")
 
-sueldo_nuevo = sueldoempleado + aumentosueldo
+#Proximo
 
-print("La cantidad de dinero que se le añadirá al sueldo es:", aumentosueldo)
-print("El nuevo sueldo es:", sueldo_nuevo)
+import random
+
+print("Ingrese su edad")
+num =random.randrange(1,10,1)
+print(num)
+
+#proximo 
+print("Ingrese su edad")
+num =int(input())
+if num >10 and num <=18:
+    print("Usted paga $1000")
+if num >18 and num <=65:
+ print("Usted paga $2000")
+if num >65:
+   print("Usted paga $1500")
+if num <10:
+   print("Usted no paga")
+
+#proximo
