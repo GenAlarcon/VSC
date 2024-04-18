@@ -1,10 +1,9 @@
-num1=1
-num2=2
-num3=3
+lista_num = {1, 2, 3, 4, 5}
+for valor in lista_num:
+    print(valor)
 
-if num1>num2 and num1>num3:
-    print("el numero mayor es", num1)
-elif num2>num3:
-        print("el numero mayor es", num2)
-else:
-     print("el numero mayor es", num3)
+lista_num = {1, 2, 3, 4, 5}
+for valor in lista_num:
+    if valor>3:
+        print ("El numero ", valor, " es mayor que 3")
+        #print("Este valor es", valor)

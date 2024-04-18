@@ -2,6 +2,7 @@ for i in range(10):
     print(i)
 
 #proximo
+
 num=0
 for i in range(3):
     print("Ingrese un numero")
@@ -9,6 +10,7 @@ for i in range(3):
 print(num/3)
 
 #proximo
+
 def tabla_de_multiplicar():
     numero = int(input("Ingrese el número que desea multiplicar: "))
     print(f"Tabla de multiplicar del {numero}:")
@@ -20,6 +22,7 @@ tabla_de_multiplicar()
 
 #proximo
 #primer ejemplo
+
 num=7
 edad=64
 
@@ -31,6 +34,7 @@ else:
     print("Ninguna de las condiciones anteriores se cumple")
 
 #segundo ejemplo
+
 Alex=15
 Sam=24
 Ada=60
@@ -42,6 +46,7 @@ if Alex<Sam:
      print("Sam solo es mayor que Alex")
 
 #proximo
+
 #Selecciona cualquier numero que desees
 num1=1
 num2=2
