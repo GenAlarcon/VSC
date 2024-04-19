@@ -1,9 +1,13 @@
-lista_num = {1, 2, 3, 4, 5}
-for valor in lista_num:
-    print(valor)
+def area(numone,numtwo):
+    result=numone*numtwo
+    return result
+def perimetro(numone,numetwo):
+    result=numone*2+numetwo*2
+    return result
 
-lista_num = {1, 2, 3, 4, 5}
-for valor in lista_num:
-    if valor>3:
-        print ("El numero ", valor, " es mayor que 3")
-        #print("Este valor es", valor)
+print("ingrese dos numeros")
+numone=int(input())
+numtwo=int(input())
+
+print(area(numone,numtwo))
+print(perimetro(numone,numtwo))
