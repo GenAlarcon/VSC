@@ -1,11 +1,11 @@
-op=2
+op=int(input())
 
 match op:
     case 1:
-        print("")
+       print("opcion 1")
     case 2:
-        primerwhile()
+        print("opcion 2")
     case 3:
-        verifpassw()
+        print("opcion 3")
     case 4:
         print("Salir :)")
