@@ -30,6 +30,21 @@ def area_rectangulo(base,altura):
     result=base*altura
     return result
 
+import math
+def hipotenusa(cateto1,cateto2):
+    result=math.sqrt((cateto1**2)+(cateto2**2))
+    return result
+
+import math
+def cateto1(hipotenusa,cateto2):
+    result=math.sqrt((hipotenusa**2)-(cateto2**2))
+    return result
+
+import math
+def cateto2(hipotenusa,cateto1):
+    result=math.sqrt((hipotenusa**2)-(cateto1**2))
+    return result
+
 name = ""
 print("Bienvenido usuario misterioso :)")
 print("Primero necesito saber cual es su nombre, por favor ingrese su nombre")
@@ -45,7 +60,10 @@ while True:
    print("6.- area de un cuadrado")
    print("7.- area de un triangulo")
    print("8.- area de un rectangulo")
-   print("9.- Salir")
+   print("9.- saca la hipotenusa del triangulo")
+   print("10.- saca el cateto1 del triangulo")
+   print("11.- saca el cateto2 del triangulo")
+   print("12.- Salir")
    
    op = int(input())
    
@@ -91,5 +109,20 @@ while True:
          altura=int(input())
          print(area_rectangulo(base, altura)) 
        case 9:
+         print("ingrese dos numeros")
+         cateto1=int(input())
+         cateto2=int(input())
+         print(hipotenusa(cateto1,cateto2))
+       case 10:
+         print("ingrese dos numeros")
+         hipotenusa=int(input())
+         cateto2=int(input())
+         print(cateto1(hipotenusa,cateto2))
+       case 11:
+         print("ingrese dos numeros")
+         hipotenusa=int(input())
+         cateto1=int(input())
+         print(cateto1(hipotenusa,cateto1))
+       case 12:
          print("Gracias por estar aqui :)")
          break
