@@ -23,4 +23,4 @@ def cateto2(hipotenusa,cateto1):
 print("ingrese dos numeros")
 hipotenusa=int(input())
 cateto1=int(input())
-print(cateto1(hipotenusa,cateto1))
+print(cateto2(hipotenusa,cateto1))

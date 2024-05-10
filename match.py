@@ -31,22 +31,22 @@ def area_rectangulo(base,altura):
     return result
 
 import math
-def hipotenusa(cateto1,cateto2):
-    result=math.sqrt((cateto1**2)+(cateto2**2))
+def hip(cat1, cat2):
+    result=math.sqrt((cat1**2)+(cat2**2))
     return result
 
 import math
-def cateto1(hipotenusa,cateto2):
-    result=math.sqrt((hipotenusa**2)-(cateto2**2))
+def cat1(hip, cat2):
+    result=math.sqrt((hip**2)-(cat2**2))
     return result
 
 import math
-def cateto2(hipotenusa,cateto1):
-    result=math.sqrt((hipotenusa**2)-(cateto1**2))
+def cat2(hip, cat1):
+    result=math.sqrt((hip**2)-(cat1**2))
     return result
 
 name = ""
-print("Bienvenido usuario misterioso :)")
+print("Bienvenido usuario misterioso a Python :)")
 print("Primero necesito saber cual es su nombre, por favor ingrese su nombre")
 name=input()
 print("Bienvendido", name)
@@ -109,20 +109,20 @@ while True:
          altura=int(input())
          print(area_rectangulo(base, altura)) 
        case 9:
-         print("ingrese dos numeros")
-         cateto1=int(input())
-         cateto2=int(input())
-         print(hipotenusa(cateto1,cateto2))
+         print("ingrese dos catetos")
+         cat1=float(input())
+         cat2=float(input())
+         print(hip(cat1,cat2))
        case 10:
-         print("ingrese dos numeros")
-         hipotenusa=int(input())
-         cateto2=int(input())
-         print(cateto1(hipotenusa,cateto2))
+         print("ingrese la hipotenusa y el cateto")
+         hip=float(input())
+         cat2=float(input())
+         print(cat1(hip,cat2))
        case 11:
-         print("ingrese dos numeros")
-         hipotenusa=int(input())
-         cateto1=int(input())
-         print(cateto1(hipotenusa,cateto1))
+         print("ingrese la hipotenusa y el cateto")
+         hip=float(input())
+         cat1=float(input())
+         print(cat2(hip,cat1))
        case 12:
          print("Gracias por estar aqui :)")
          break
