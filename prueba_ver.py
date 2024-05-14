@@ -94,12 +94,10 @@ menu = {
     3: {"nombre": "Sopa marinera", "precio": 9700}
 }
 
-
 def mostrar_menu():
     print("Menú de PLATOS junto con sus precios")
     for numero, plato in menu.items():
         print(f"{numero}. {plato['nombre']} - ${plato['precio']}")
-
 
 def calcular_total(orden):
     total = 0
@@ -107,12 +105,11 @@ def calcular_total(orden):
         total += menu[plato]["precio"] * cantidad
     return total
 
-
 nombre_cliente = None
 orden = {}
 
 while True:
-    print("\n1. Ingresar Nombre del Cliente")
+    print("1. Ingresar Nombre del Cliente")
     print("2. Menú de Platos junto con sus precios")
     print("3. Total Boleta")
     print("4. Salir")
