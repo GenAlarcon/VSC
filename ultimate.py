@@ -45,5 +45,14 @@
 #    print(i)
 #print(f"La frase tenia {contador} letras")
 
-frase="Hola como estas"
-print(frase[-5])
+#frase="Hola como estas"
+#print(frase[-5])
+
+cadena1 = "Hola123"
+cadena2 = "Hola 123"
+cadena3 = "123"
+cadena4 = ""
+print(cadena1.isalnum())  # True, todos los caracteres son alfanuméricos
+print(cadena2.isalnum())  # False, hay un espacio en la cadena
+print(cadena3.isalnum())  # True, todos los caracteres son números
+print(cadena4.isalnum())  # False, la cadena está vacía
